@@ -48,8 +48,8 @@ header {
   /* border: 3px solid tomato; */
 }
 .section {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  margin-top: 94px;
+  margin-bottom: 94px;
   /* background-color: blueviolet; */
 }
 .logo-footer {
@@ -637,9 +637,14 @@ footer {
   perspective: 600px;
 }
 .our-teem {
+  padding-top: 94px;
+  padding-bottom: 94px;
   background: var(--alt-background);
 }
-
+.portfolio-section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
 .contacts-footer {
   font-weight: 400;
   font-size: 14px;
