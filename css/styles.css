@@ -86,7 +86,7 @@ header {
 }
 .opacity-box {
   position: relative;
-  
+  overflow: hidden;
   
 }
 .overlay{
@@ -106,17 +106,16 @@ header {
 }
 .opacity-box:hover::before {
   /* opacity: 1; */
-  transform: translateY(0);
+  
 }
-.opacity-box:focus::before {
-  /* opacity: 1; */
-}
+
 .product:hover .opacity {
   /* opacity: 1; */
   transform: translateY(0);
 }
-.product:focus.opacity {
-  /* opacity: 1; */
+.product:hover .opacity-box::before{
+  transform: translateY(0);
+
 }
 
 .opacity {
