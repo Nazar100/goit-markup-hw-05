@@ -64,12 +64,22 @@ header {
 }
 .studio {
   color: var(--captions);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+.logo:hover .studio {
+  color: var(--add-text);
+}
+
 .studio-footer,
 .join-us {
   color: var(--background);
   margin-top: 0px;
   margin-bottom: 20px;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.logo-footer:hover .studio-footer {
+  color: var(--add-text);
 }
 
 .contacts-email {
@@ -193,6 +203,7 @@ footer {
   display: flex;
 
   margin-left: auto;
+  perspective: 600px;
 }
 /* logo */
 .logo {
@@ -205,6 +216,13 @@ footer {
 
 .web {
   color: var(--add-text);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.logo:hover .web {
+  color: var(--captions);
+}
+.logo-footer:hover .web {
+  color: var(--background);
 }
 
 .nav-list-link + .nav-list-link {
@@ -222,7 +240,7 @@ footer {
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
-
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -239,6 +257,7 @@ footer {
 }
 .nav-link:hover,
 .nav-link:focus {
+  transform: scale(1.15);
   color: var(--add-text);
 }
 .nav-list-contacts + .nav-list-contacts {
@@ -247,8 +266,11 @@ footer {
 .nav-list-contacts {
   display: flex;
   align-items: flex-end;
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
+.nav-list-contacts:hover {
+  transform: scale(1.15);
+}
 .nav,
 .current {
   color: var(--add-text);
@@ -297,10 +319,16 @@ footer {
   background-color: var(--alt-background);
   margin-bottom: 30px;
   border-radius: 4px;
+
+  perspective: 600px;
 }
 .benefits-item {
   margin-left: auto;
   margin-right: auto;
+}
+.benefits-icon:hover .benefits-item {
+  transition: transform 500ms linear;
+  transform: rotateZ(360deg);
 }
 /* main */
 .hero {
@@ -335,6 +363,20 @@ footer {
   right: 0;
   display: flex;
   align-items: center;
+}
+.f-w {
+  display: inline-block;
+  transition: transform 500ms linear;
+}
+.s-w {
+  display: inline-block;
+  transition: transform 500ms linear;
+}
+.box:hover .f-w {
+  transform: translateY(-120%);
+}
+.box:hover .s-w {
+  transform: translateY(120%);
 }
 
 .button {
@@ -381,7 +423,16 @@ footer {
     0px 1px 3px rgba(0, 0, 0, 0.12);
   border-radius: 0px 0px 4px 4px;
 }
-
+.teem-item:hover .card-content {
+  transform: rotateY(0);
+  transition: transform 500ms linear;
+  transform: rotateY(360deg);
+}
+.teem-item:hover .photo {
+  transform: rotateY(0);
+  transition: transform 500ms linear;
+  transform: rotateY(360deg);
+}
 .caption-name {
   font-weight: 500;
   font-size: 16px;
@@ -414,6 +465,7 @@ footer {
   border: transparent;
 
   cursor: pointer;
+
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -422,6 +474,10 @@ footer {
 .portfolio-button:focus {
   background-color: var(--add-text);
   color: var(--background);
+}
+
+.button-item {
+  perspective: 600px;
 }
 .button-item + .button-item {
   margin-left: 8px;
@@ -488,8 +544,8 @@ footer {
 .networks-icon {
   --color1: #ffffff;
   --color2: #afb1b8;
-  transition: --color1 1000ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: --color2 1000ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: all 1000ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: all 1000ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .networks-icon:hover,
 .networks-icon:focus {
@@ -520,10 +576,13 @@ footer {
   margin-left: auto;
   margin-right: auto;
   fill: #afb1b8;
+  transform: scale(1, 1);
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .clients-list-item:hover .clients-logo-icon {
   fill: var(--add-text);
+  transform: scale(1.5, 1.5);
 }
 .footer-networks-icon {
   background-color: #484957;
@@ -554,6 +613,7 @@ footer {
 }
 .teem-item {
   margin-right: 0px;
+  perspective: 600px;
 }
 .our-teem {
   background: var(--alt-background);
