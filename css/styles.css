@@ -281,13 +281,14 @@ footer {
 
   display: flex;
   align-items: flex-end;
-  transform: scale(1,1);
-  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transform: scale(1, 1);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .contacts:hover,
 .contacts:focus {
   color: var(--add-text);
-  transform: scale(1.15,1.15);
+  transform: scale(1.15, 1.15);
 }
 
 .item-content {
@@ -565,7 +566,7 @@ footer {
 .networks-icon {
   --color1: #ffffff;
   --color2: #afb1b8;
-  transition: all 1000ms cubic-bezier(0.4, 0, 0.2, 1);
+
   transition: all 1000ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .networks-icon:hover,
