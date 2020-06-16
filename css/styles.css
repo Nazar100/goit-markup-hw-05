@@ -48,8 +48,8 @@ header {
   /* border: 3px solid tomato; */
 }
 .section {
-  margin-top: 94px;
-  margin-bottom: 94px;
+  padding-top: 94px;
+  padding-bottom: 94px;
   /* background-color: blueviolet; */
 }
 .logo-footer {
@@ -566,13 +566,32 @@ footer {
   --color1: #ffffff;
   --color2: #afb1b8;
   transition: all 1000ms cubic-bezier(0.4, 0, 0.2, 1);
-  /* transition: all 1000ms cubic-bezier(0.4, 0, 0.2, 1); */
+  transition: all 1000ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .networks-icon:hover,
 .networks-icon:focus {
   --color1: #2196f3;
   --color2: #ffffff;
+  /* animation-name: networks-icons;
+  animation-duration: 250ms;
+  animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  animation-fill-mode: forwards; */
+  /* animation: networks-icons 500ms cubic-bezier(0.4, 0, 0.2, 1) forwards; */
 }
+/* @keyframes networks-icons {
+  0% {
+    --color1: #ffffff;
+    --color2: #afb1b8;
+  }
+  50% {
+    --color1: #74daf7;
+    --color2: #d0d6d6;
+  }
+  100% {
+    --color1: #2196f3;
+    --color2: #ffffff;
+  } */
+
 .clients-logo {
   width: 170px;
   height: 90px;
@@ -637,14 +656,9 @@ footer {
   perspective: 600px;
 }
 .our-teem {
-  padding-top: 94px;
-  padding-bottom: 94px;
   background: var(--alt-background);
 }
-.portfolio-section {
-  padding-top: 94px;
-  padding-bottom: 94px;
-}
+
 .contacts-footer {
   font-weight: 400;
   font-size: 14px;
